@@ -3,6 +3,8 @@ Python Apps and Docker
 
 Supporting files for a presentation I gave at `PyGotham <http://pygotham.org/>`_ 2014.
 
+The `slides <https://speakerdeck.com/mattupstate/python-apps-and-docker>`_ are available
+on SpeakerDeck.
 
 License
 =======
