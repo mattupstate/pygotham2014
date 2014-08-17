@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Run uWSGI and redirect stderr to stdout
+uwsgi --ini /code/uwsgi.ini 2>&1 &
+
+# Wait a sec for it to come up
+sleep 0.1
+
+# Run Nginx and redirect anthing from stderr to stdout as well
+ln -s /code/nginx.conf /etc/nginx/nginx.conf
+nginx 2>&1

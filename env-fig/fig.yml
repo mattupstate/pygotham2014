@@ -1,0 +1,14 @@
+web:
+  build: .
+  command: python wsgi.py
+  volumes:
+    - .:/code
+  links:
+    - db
+
+db:
+  image: orchardup/postgresql
+  environment:
+    POSTGRESQL_DB: myapp
+    POSTGRESQL_USER: myapp
+    POSTGRESQL_PASS: password
